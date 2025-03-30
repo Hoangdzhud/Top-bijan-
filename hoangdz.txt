@@ -8708,7 +8708,7 @@ spawn(
 end
 
 local v79 = Tabs.Item:AddToggle("ToggleAutoSkullGuitar", {
-    Title = "lấy Guitar",
+    Title = "Skull Guitar",
     Description = "Sea 3",
     Default = false
 });
@@ -8832,7 +8832,7 @@ spawn(function()
 end);
 
 local v80 = Tabs.Item:AddToggle("ToggleAutoBuddy", {
-    Title = "lấy kiếm Buddy",
+    Title = "Auto Buddy",
     Description = "Sea 3",
     Default = false
 });
@@ -8878,7 +8878,7 @@ local v82 =
     Tabs.Item:AddToggle(
     "ToggleAutoDualKatana",
     {
-        Title = "lấy song dao",
+        Title = "Auto CDK",
         Description = "",
         Default = false
     }
@@ -9511,7 +9511,7 @@ local v78 =
     Tabs.Item:AddToggle(
     "ToggleAutoRainbowHaki",
     {
-        Title = "cày Haki cầu vồng",
+        Title = "Auto Ranbow Haki",
         Description = "",
         Default = false
     }
@@ -9688,7 +9688,7 @@ spawn(
     end
 )
 if Second_Sea then
-    local ToggleFactory = Tabs.Item:AddToggle("ToggleFactory", {Title = "đấm nhà máy", Default = false})
+    local ToggleFactory = Tabs.Item:AddToggle("ToggleFactory", {Title = "Auto Farm Factory", Default = false})
     ToggleFactory:OnChanged(
         function(Value)
             _G.Factory = Value
@@ -9741,7 +9741,7 @@ if Second_Sea then
 end
 
 if Third_Sea then
-    local ToggleCakeV2 = Tabs.Item:AddToggle("ToggleCakeV2", {Title = "giết nô lệ gia đen", Default = false})
+    local ToggleCakeV2 = Tabs.Item:AddToggle("ToggleCakeV2", {Title = "Kill Dough King", Default = false})
     ToggleCakeV2:OnChanged(
         function(Value)
             _G.AutoCakeV2 = Value
@@ -9792,7 +9792,7 @@ spawn(
 )
 
 if Second_Sea or Third_Sea then
-    local ToggleHakiColor = Tabs.Item:AddToggle("ToggleHakiColor", {Title = "mua Haki Color", Default = false})
+    local ToggleHakiColor = Tabs.Item:AddToggle("ToggleHakiColor", {Title = "Buy Haki Color", Default = false})
     ToggleHakiColor:OnChanged(
         function(Value)
             _G.Auto_Buy_Enchancement = Value
@@ -9816,7 +9816,7 @@ end
 
 if Second_Sea then
     local ToggleSwordLengend =
-        Tabs.Item:AddToggle("ToggleSwordLengend", {Title = "mua Lengendary", Default = false})
+        Tabs.Item:AddToggle("ToggleSwordLengend", {Title = "Buy Sword Lengendary", Default = false})
     ToggleSwordLengend:OnChanged(
         function(Value)
             _G.BuyLengendSword = Value
@@ -9848,7 +9848,7 @@ end
 
 local Chestt = Tabs.Item:AddSection("Chest Farm")
 
-local ToggleFarmChest = Tabs.Item:AddToggle("ToggleFarmChest", {Title = "Auto Farm rương [Tween]", Default = false})
+local ToggleFarmChest = Tabs.Item:AddToggle("ToggleFarmChest", {Title = "Auto Farm Chest[Tween]", Default = false})
 ToggleFarmChest:OnChanged(
     function(Value)
         _G.AutoCollectChest = Value
@@ -9883,7 +9883,7 @@ spawn(
     end
 )
 
-local ToggleFarmChestBP = Tabs.Item:AddToggle("ToggleFarmChestBP", {Title = "Auto Farm rương [Bypass]", Default = false})
+local ToggleFarmChestBP = Tabs.Item:AddToggle("ToggleFarmChestBP", {Title = "Auto Farm Chest[Bypass]", Default = false})
 ToggleFarmChestBP:OnChanged(
     function(v488)
         _G.ChestBypass = v488;
@@ -9927,7 +9927,7 @@ spawn(function()
 end);
 
 local ChestStop =
-    Tabs.Item:AddToggle("ChestStop", {Title = "dừng khi có vật phẩm lạ", Default = false})
+    Tabs.Item:AddToggle("ChestStop", {Title = "Stop When Have God's Chalice& Fist Of Darkness", Default = false})
 ChestStop:OnChanged(
     function(Value)
         getgenv().StopChest = Value
@@ -9964,7 +9964,7 @@ spawn(
 
 local boss = Tabs.Item:AddSection("Boss-Item Farm")
 
-local Cyborg = Tabs.Item:AddToggle("Cyborg", {Title = "Auto lấy Cyborg Race", Description = "", Default = false })
+local Cyborg = Tabs.Item:AddToggle("Cyborg", {Title = "Auto Get Cyborg Race", Description = "", Default = false })
 Cyborg:OnChanged(function(Value)
     getgenv().AutoCyborg = Value
 end)
@@ -10021,7 +10021,7 @@ spawn(function()
     end)
 end)
 
-local Ghoul = Tabs.Item:AddToggle("Ghoul", {Title = "Auto lấy tộc quỷ Race", Default = false })
+local Ghoul = Tabs.Item:AddToggle("Ghoul", {Title = "Auto Get Ghoul Race", Default = false })
 Ghoul:OnChanged(function(Value)
     getgenv().AutoGhoul = Value
 end)
@@ -10143,7 +10143,7 @@ spawn(function()
     end
 end)
 
-local DoughKing = Tabs.Item:AddToggle("DoughKing", {Title = "Kill thái da đen đi ae", Default = false })
+local DoughKing = Tabs.Item:AddToggle("DoughKing", {Title = "Kill Dough King", Default = false })
 DoughKing:OnChanged(function(Value)
     getgenv().AutoDoughKing = Value
 end)
@@ -10274,7 +10274,7 @@ spawn(function()
         end
     end
 end)
-local DarkBe = Tabs.Item:AddToggle("DarkBe", {Title = "diết thằng lông chim", Default = false })
+local DarkBe = Tabs.Item:AddToggle("DarkBe", {Title = "Kill Darkbeard", Default = false })
 DarkBe:OnChanged(function(Value)
     getgenv().AutoDarkbeard = Value
 end)
@@ -10311,7 +10311,7 @@ spawn(function()
     end
 end)
 Tabs.Item:AddParagraph({
-     Title = "cày haki quan sát",
+     Title = "Farm Observation",
      Content = string.rep("-", 30)
 })
 local ObservationRange = Tabs.Item:AddParagraph({
@@ -10330,7 +10330,7 @@ spawn(function()
         end)
     end
 end)
-local Kenv2 = Tabs.Item:AddToggle("Kenv2", {Title = " cày haki quan sát v2", Default = false })
+local Kenv2 = Tabs.Item:AddToggle("Kenv2", {Title = "Auto UP Observation V2", Default = false })
 Kenv2:OnChanged(function(Value)
     getgenv().AutoObservationHakiV2 = Value
 end)    
@@ -10487,7 +10487,7 @@ spawn(function()
         end)
     end)
 end)
-local FarmKen = Tabs.Item:AddToggle("FarmKen", {Title = "cày haki ", Default = false })
+local FarmKen = Tabs.Item:AddToggle("FarmKen", {Title = "Farm Observation", Default = false })
 FarmKen:OnChanged(function(Value)
     getgenv().AutoObservation = Value
 end)
@@ -10548,7 +10548,7 @@ local SpeedBoatSlider =
     Tabs.Volcanic:AddSlider(
     "SliderSpeedBoat",
     {
-        Title = "tăng tốc độ",
+        Title = "Speed Boat",
         Description = "",
         Default = BoatSpeed,
         Min = 0,
@@ -10566,7 +10566,7 @@ local AutoFindPrehistoricToggle =
     Tabs.Volcanic:AddToggle(
     "AutoFindPrehistoric",
     {
-        Title = tấn công đảo vocannic cho tao",
+        Title = "Auto Find Prehistoric Island",
         Description = "",
         Default = false
     }
