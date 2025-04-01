@@ -3262,13 +3262,13 @@ if Sea3 then
                 elseif (string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86) then
                     v491:SetDesc("Còn: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 39) .. " ");
                 else
-                    v491:SetDesc("Tư Lệnh Bánh : ✅️");
+                    v491:SetDesc("vua da đen: ✅️");
                 end
             end);
         end
     end);
     local v492 = v16.Main:AddToggle("ToggleCake", {
-        Title = "Cày Tư Lệnh Bánh",
+        Title = "Cày nô lệ gia trắng",
         Description = "",
         Default = false
     });
@@ -3382,7 +3382,7 @@ if Sea3 then
         end
     end);
     local v495 = v16.Main:AddToggle("ToggleSpawnCake", {
-        Title = "Triệu Hồi Tư Lệnh Bánh",
+        Title = "Triệu Hồi vua da đen",
         Description = "",
         Default = true
     });
