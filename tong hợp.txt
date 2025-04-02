@@ -1,0 +1,58 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "Hoàng dz Roblox",
+         Animation = "MTBT ngu lồn"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "hoangdz",
+        Description = "",
+        KeyLink = "",
+        Keys = {"MTBT"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "mtbt l..",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=85744224653473",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://pastefy.app/ACOX6D6h/raw"))()(Settings)
+  end
+  })
+  
+       Name = "Hoangdz",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hoangdzhud/Top-bijan-/refs/heads/main/Bijan.top.txt"))()(Settings)
+  end
+  })
